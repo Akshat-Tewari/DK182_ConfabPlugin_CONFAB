@@ -1,0 +1,11 @@
+{
+    "name": "ConFab",
+    "version": "1.0",
+    "description": "Build an Extension!",
+    "permissions": ["contextMenus","activeTab","http://localhost:3001/api/v1"],
+    "background": {
+      "scripts": ["js/background.js"],
+      "persistent": true
+    },
+    "manifest_version": 2
+  }
