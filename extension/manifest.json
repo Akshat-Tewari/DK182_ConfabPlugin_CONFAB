@@ -1,0 +1,19 @@
+{
+    "name": "ConFab",
+    "version": "1.0",
+    "description": "Build an Extension!",
+    "permissions": ["contextMenus","activeTab","http://3.6.85.173:3001/api/v1"],
+    "background": {
+      "scripts": ["js/background.js"],
+      "persistent": true
+    },
+    "content_scripts" : [{
+        "matches":["<all_urls>"],
+        "js":["js/content.js"]
+    }],
+    "browser_action":{
+      "default_popup":"popup.html",
+      "default_title":"Highlight"
+    },
+    "manifest_version": 2
+  }
