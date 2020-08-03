@@ -2,10 +2,18 @@
     "name": "ConFab",
     "version": "1.0",
     "description": "Build an Extension!",
-    "permissions": ["contextMenus","activeTab","http://localhost:3001/api/v1"],
+    "permissions": ["contextMenus","activeTab","http://3.6.85.173:3000/api/v1/projects/new","storage",
+        "downloads",
+        "tabs",
+        "webNavigation"],
     "background": {
       "scripts": ["js/background.js"],
       "persistent": true
+    },
+    "icons": {
+        "128": "icon128.png",
+        "48": "icon48.png",
+        "16": "icon16.png"
     },
     "manifest_version": 2
   }

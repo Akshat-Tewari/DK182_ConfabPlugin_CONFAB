@@ -12,7 +12,7 @@ async function postData(data = {}){
   // console.log( JSON.stringify(data));
   data = await JSON.stringify(data) ;
   console.log(data);
-  const response = await fetch('http://localhost:3001/api/v1/projects/new',{
+  const response = await fetch('http://3.6.85.173:3000/api/v1/projects/new',{
     method: 'POST', // *GET, POST, PUT, DELETE, etc.
     mode: 'cors', // no-cors, *cors, same-origin
     headers: {
